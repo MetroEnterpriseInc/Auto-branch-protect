@@ -3,6 +3,8 @@
 
 [![CodeFactor](https://www.codefactor.io/repository/github/zkoppert/auto-branch-protect/badge?s=c9ed51e74e4a59d7e3a0e766fe56b1237a53d1c4)](https://www.codefactor.io/repository/github/zkoppert/auto-branch-protect)  [![Total alerts](https://img.shields.io/lgtm/alerts/g/zkoppert/Auto-branch-protect.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/zkoppert/Auto-branch-protect/alerts/)
 
+Forked from Zack Koppert's Auto Branch Protect Tool for GitHub's Technical Assessment credits - https://www.codefactor.io/repository/github/zkoppert/auto-branch-protect
+
 Auto branch protect is a simple web service that listens for organization events to know when a repository has been created. When the repository is created this web service automates the protection of the main branch. It also notifies you with an @mention in an issue within the repository that outlines the protections that were added.
 
 ## Usage
@@ -11,9 +13,15 @@ Auto branch protect is a simple web service that listens for organization events
     - `pip install -r requirements.txt`
   - [Flask](https://flask.palletsprojects.com/en/1.1.x/installation/#installation)
   - [ngrok](https://dashboard.ngrok.com/get-started)
+  - [Git](https://git-scm.com/download/mac)
+  - [IDLE](https://docs.python.org/3/library/idle.html)
+  - 
 - Set GH_TOKEN as an environment variable with a value that corresponds to a GitHub Token (ie. `export GH_TOKEN=208923487234780287128091`)
 - Set the user value in app.py
 - Start the local web service via `flask run --host=0.0.0.0 &`
+
+- If you are having issues unable to start FLask on Port 5000, its because of Mac-Settings-System Preferences-Sharing-Airplay receiver ON- Turn this off.
+
 <!-- markdownlint-disable -->
 - Start the forwarding service via `./ngrok http 5000 &`
 - Note the forwarding address (ie. `https://cfe6d829.ngrok.io` in the output of the ngrok application)
