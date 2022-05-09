@@ -18,7 +18,8 @@ Web hook is basically a Http Push API. Its a way for an application to provide a
   - [ngrok](https://dashboard.ngrok.com/get-started)
   - [Git](https://git-scm.com/download/mac)
   - [IDLE](https://docs.python.org/3/library/idle.html)
-  - [Jenkins]{https://www.jenkins.io/download/}
+  - [Jenkins](https://www.jenkins.io/download/)
+  - [AWS](https://portal.aws.amazon.com/billing/signup#/start/email)
 
 <img width="988" alt="Screen Shot 2022-05-08 at 11 11 29 PM" src="https://user-images.githubusercontent.com/104956469/167350909-171e6df6-e7e8-472f-bd1f-4678d77b9aca.png">
 
