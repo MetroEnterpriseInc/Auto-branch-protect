@@ -21,9 +21,10 @@ Web hook is basically a Http Push API. Its a way for an application to provide a
   - [Jenkins](https://www.jenkins.io/download/)
   - [AWS](https://portal.aws.amazon.com/billing/signup#/start/email)
 
-<img width="988" alt="Screen Shot 2022-05-08 at 11 11 29 PM" src="https://user-images.githubusercontent.com/104956469/167350909-171e6df6-e7e8-472f-bd1f-4678d77b9aca.png">
 
-  
+
+  <img width="534" alt="Screen Shot 2022-05-08 at 11 17 00 PM" src="https://user-images.githubusercontent.com/104956469/167351261-622ebe50-799b-4d4a-b4c2-6b8ce1bc7da0.png">
+
   
   
 - Set GH_TOKEN as an environment variable with a value that corresponds to a GitHub Token (ie. `export GH_TOKEN=208923487234780287128091`)
