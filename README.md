@@ -15,7 +15,7 @@ Auto branch protect is a simple web service that listens for organization events
   - [ngrok](https://dashboard.ngrok.com/get-started)
   - [Git](https://git-scm.com/download/mac)
   - [IDLE](https://docs.python.org/3/library/idle.html)
-  - 
+  
 - Set GH_TOKEN as an environment variable with a value that corresponds to a GitHub Token (ie. `export GH_TOKEN=208923487234780287128091`)
 - Set the user value in app.py
 - Start the local web service via `flask run --host=0.0.0.0 &`
