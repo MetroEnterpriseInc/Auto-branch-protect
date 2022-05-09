@@ -69,7 +69,7 @@ Now for the Jenkins setup:
  - Create a new Freestyle project
  - Set up Git as the source.
  - Copy Jenkins URL into GitHub webhook for Auto-branch-protect repo
- - Commit a change to see the Jenkins build job trigger.
+ - Commit a change to the Master branch to see Jenkins build job trigger.
 
 
 
