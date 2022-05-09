@@ -28,14 +28,15 @@ Web hook is basically a Http Push API. Its a way for an application to provide a
 
   
   
-- Set GH_TOKEN as an environment variable with a value that corresponds to a GitHub Token (ie. `export GH_TOKEN=208923487234780287128091`)
-- Set the user value in app.py
-- Start the local web service via `flask run --host=0.0.0.0 &`
+- Setup the Organization - Metro Enterprises Inc. It has 3 members. Owner and Administrator syegappan,2 members yegap and yegapp.
+- Set GH_TOKEN as an environment variable with a value that corresponds to a GitHub Token (ie. `export GH_TOKEN=208923487234780287128091`). This is obtained from Profile-Settings-Developer Settings- PAT.
+- Set the user value in app.py. 
+- Start the local web service via `flask run --host=0.0.0.0`
 
 - If you are having issues unable to start FLask on Port 5000, its because of Mac-Settings-System Preferences-Sharing-Airplay receiver ON- Turn this off.
 
 <!-- markdownlint-disable -->
-- Start the forwarding service via `./ngrok http 5000 &`
+- Start the forwarding service via `./ngrok http 5000 `
 - Note the forwarding address (ie. `https://cfe6d829.ngrok.io` in the output of the ngrok application)
 <!-- markdownlint-disable -->
 - Set up a WebHook in the desired GitHub organization [example](https://github.com/buzzmoto-org/REPO/settings/hooks)
@@ -46,20 +47,50 @@ Web hook is basically a Http Push API. Its a way for an application to provide a
 - Create a repository
 - See that branch protection and an issue was created for the repo!
 
+Now for the Jenkins setup:
+- Signup for a free account in AWS.
+- Create an EC2 ubuntu instance in the Free tier with ports open for Http 80, TCP 8080 and ssh 22, create a .pem key
+-  Jenkins defaults to 8080 unless you manually edit the config file.
+-  SSH to Ubuntu server using the .pem key and install Jenkins
+   
+   sudo apt-get update
+
+   sudo apt-get install openjdk-8-jdk
+
+   wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+
+   sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+   sudo apt-get update
+
+   sudo apt-get install jenkins
+   
+ - Start the service ' Sudo service Jenkins start '
+ - Create a new Freestyle project
+ - Set up Git as the source.
+ - Copy Jenkins URL into GitHub webhook for Auto-branch-protect repo
+ - Commit a change to see the Jenkins build job trigger.
+
+
+
 ## Related Documentation
 - [GitHub APIv3](https://developer.github.com/v3/)
 - [Web Hooks](https://developer.github.com/webhooks/)
 - [API Status](https://www.githubstatus.com/)
 - [Flask Docs](https://flask.palletsprojects.com/en/1.1.x/)
 - [ngrok](https://ngrok.com/docs)
+- [Jenkins](https://www.jenkins.io/doc/)
+- [AWS](https://docs.aws.amazon.com/)
 
 ## Dependencies and Attribution
 - Python
 - Flask
 - ngrok
+- Jenkins
+- AWS
 
 ## Bugs and improvements
 - Payloads are capped at 25 MB. If your event generates a larger payload, a webhook will not be fired. This may happen, for example, on a create event if many branches or tags are pushed at once. We suggest monitoring your payload size to ensure delivery. See [webhooks docs](https://developer.github.com/webhooks/)
 - There is a 1 second Delay built in to the code which is NOT ideal. It seems the code is checking for the main branch before it is finished creating.
-- This could be done with AWS Lambda and an API Gateway.
+
 
