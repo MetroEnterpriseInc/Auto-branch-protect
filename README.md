@@ -9,8 +9,9 @@ Auto branch protect is a simple web service that listens for organization events
 
 
 
-Add Jenkins webhook in GitHub
-A Web hook is basically a Http Push API. Its a way for an application to provide another application with real time notifications. Whenever a Developer pushes a change in the Auto-branch-protect's Master branch, a build is triggered in Jenkins. Jenkins is installed in a Ubuntu instance in AWS Cloud. 
+Add Jenkins webhook in GitHub:
+
+  A Web hook is basically a Http Push API. Its a way for an application to provide another application with real time notifications. Whenever a Developer pushes a change in the Auto-branch-protect's Master branch, a build is triggered in Jenkins. Jenkins is installed in a Ubuntu instance in AWS Cloud. 
 
 ## Usage
 - Install the following:
