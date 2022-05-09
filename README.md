@@ -7,8 +7,10 @@ Forked from Zack Koppert's Auto Branch Protect Tool for GitHub's Technical Asses
 
 Auto branch protect is a simple web service that listens for organization events to know when a repository has been created. When a repository is created, the web service automates the protection of the main branch. It also notifies you with an @mention in an issue within the repository that outlines the protections that were added.
 
+
+
 Add Jenkins webhook in GitHub
-Web hook is basically a Http Push API. Its a way for an application to provide another application with real time notifications. Whenever a Developer pushes a change in the Auto-branch-protect's Master branch, a build is triggered in Jenkins. Jenkins is installed in Ubuntu instance in AWS Cloud. 
+A Web hook is basically a Http Push API. Its a way for an application to provide another application with real time notifications. Whenever a Developer pushes a change in the Auto-branch-protect's Master branch, a build is triggered in Jenkins. Jenkins is installed in a Ubuntu instance in AWS Cloud. 
 
 ## Usage
 - Install the following:
