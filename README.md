@@ -5,7 +5,10 @@
 
 Forked from Zack Koppert's Auto Branch Protect Tool for GitHub's Technical Assessment credits - https://www.codefactor.io/repository/github/zkoppert/auto-branch-protect
 
-Auto branch protect is a simple web service that listens for organization events to know when a repository has been created. When the repository is created this web service automates the protection of the main branch. It also notifies you with an @mention in an issue within the repository that outlines the protections that were added.
+Auto branch protect is a simple web service that listens for organization events to know when a repository has been created. When a repository is created, the web service automates the protection of the main branch. It also notifies you with an @mention in an issue within the repository that outlines the protections that were added.
+
+Add Jenkins webhook in GitHub
+Web hook is basically a Http Push API. Its a way for an application to provide another application with real time notifications. Whenever a Developer pushes a change in the Auto-branch-protect's Master branch, a build is triggered in Jenkins. Jenkins is installed in Ubuntu instance in AWS Cloud. 
 
 ## Usage
 - Install the following:
@@ -15,6 +18,12 @@ Auto branch protect is a simple web service that listens for organization events
   - [ngrok](https://dashboard.ngrok.com/get-started)
   - [Git](https://git-scm.com/download/mac)
   - [IDLE](https://docs.python.org/3/library/idle.html)
+  - [Jenkins]{https://www.jenkins.io/download/}
+
+<img width="988" alt="Screen Shot 2022-05-08 at 11 11 29 PM" src="https://user-images.githubusercontent.com/104956469/167350909-171e6df6-e7e8-472f-bd1f-4678d77b9aca.png">
+
+  
+  
   
 - Set GH_TOKEN as an environment variable with a value that corresponds to a GitHub Token (ie. `export GH_TOKEN=208923487234780287128091`)
 - Set the user value in app.py
