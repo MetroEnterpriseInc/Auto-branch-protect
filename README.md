@@ -23,7 +23,8 @@ Web hook is basically a Http Push API. Its a way for an application to provide a
 
 
 
-  <img width="534" alt="Screen Shot 2022-05-08 at 11 17 00 PM" src="https://user-images.githubusercontent.com/104956469/167351261-622ebe50-799b-4d4a-b4c2-6b8ce1bc7da0.png">
+  <img width="534" alt="Screen Shot 2022-05-08 at 11 17 00 PM" src="https://user-images.githubusercontent.com/104956469/167351261-622ebe50-799b-4d4a-b4c2-6b8ce1bc7da0.png"><img width="720" alt="Screen Shot 2022-05-08 at 11 43 33 PM" src="https://user-images.githubusercontent.com/104956469/167354585-759b86c7-b9fe-4563-aa92-b6d0de346f26.png">
+
 
   
   
