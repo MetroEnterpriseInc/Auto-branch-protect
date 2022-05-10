@@ -21,7 +21,7 @@ Add Jenkins webhook in GitHub:
   - [ngrok](https://dashboard.ngrok.com/get-started)
   - [Git](https://git-scm.com/download/mac)
   - [IDLE](https://docs.python.org/3/library/idle.html)
-  - [Jenkins](https://www.jenkins.io/download/)
+  - [Jenkins - GitHub Integration Plugin](https://www.jenkins.io/download/)
   - [AWS](https://portal.aws.amazon.com/billing/signup#/start/email)
 
 
