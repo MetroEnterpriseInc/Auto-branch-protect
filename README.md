@@ -3,7 +3,7 @@
 
 [![CodeFactor](https://www.codefactor.io/repository/github/zkoppert/auto-branch-protect/badge?s=c9ed51e74e4a59d7e3a0e766fe56b1237a53d1c4)](https://www.codefactor.io/repository/github/zkoppert/auto-branch-protect)  [![Total alerts](https://img.shields.io/lgtm/alerts/g/zkoppert/Auto-branch-protect.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/zkoppert/Auto-branch-protect/alerts/)
 
-Forked from Zack Koppert's Auto Branch Protect Tool for GitHub's Technical Assessment credits - https://www.codefactor.io/repository/github/zkoppert/auto-branch-protect
+Forked from Zack Koppert's Auto Branch Protect Tool for GitHub's Technical Assessment credits - https://www.codefactor.io/repository/github/zkoppert/auto-branch-protect.
 
 Auto branch protect is a simple web service that listens for organization events to know when a repository has been created. When a repository is created, the web service automates the protection of the main branch. It also notifies you with an @mention in an issue within the repository that outlines the protections that were added..
 
