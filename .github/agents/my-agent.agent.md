@@ -1,5 +1,5 @@
 ---
-name: DocumentationAgentwithinThisRepo
+name: DocumentationAgentwithinThisRepometroenterprisecustomagent_readandexplain
 description: an agent to DocumentationAgentwithinThisRepo
 ---
 
